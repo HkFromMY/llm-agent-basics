@@ -118,7 +118,7 @@ tools = [
 
 agent = create_react_agent(llm=model, tools=tools, prompt=react_docstore_prompt, stop_sequence=True)
 
-executor = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools, verbos=True, handle_parsing_errors=True)
+executor = AgentExecutor.from_agent_and_tools(agent=agent, tools=tools, verbose=True, handle_parsing_errors=True)
 
 chat_history = []
 while True:
